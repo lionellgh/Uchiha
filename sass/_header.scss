@@ -1,0 +1,50 @@
+nav {
+  display: none;
+}
+
+#menuham {
+  transition: height 0.5s ease-out;
+  height: 0;
+  overflow: hidden;
+}
+
+#close {
+  visibility: hidden;
+  position: fixed;
+  top: 0.2%;
+  right: 3%;
+  color: white;
+  font-size: 2.4em;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1270px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: stretch;
+
+    div:nth-child(1) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    }
+    h3 {
+      color: white;
+      font-size: 1.8em;
+    }
+  }
+  #hamburger {
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+    margin-bottom: 25px;
+  }
+  header {
+    background: rgb(5, 68, 104);
+  }
+}

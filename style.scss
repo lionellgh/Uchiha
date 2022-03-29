@@ -1,0 +1,130 @@
+// ./scss/app.scss
+/*
+    FICHIER DE SURCHARGE
+ */
+
+/*---------------------------------------------------------
+   SPECIFICATIONS GENERALES - Valeurs par défaut
+  ---------------------------------------------------------
+*/
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+/*---------------------------------------------------------
+        OBJETS PARTICULIERS
+       ---------------------------------------------------------
+     */
+
+/* ------------------HEADER -----------------------*/
+
+/*--------------------------------------------------*/
+
+.boite {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin-left: 150px;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.margin {
+  //margin-right: 30px;
+  //padding-right: 40px;
+}
+
+body {
+  background-color: #e6eff6;
+}
+section {
+  margin-bottom: 50px;
+  article {
+    background-color: white;
+    margin-top: 40px;
+    margin-right: 30px;
+    height: 310px;
+    width: 210px;
+    border-radius: 6px;
+    //animation: myAnim 1s ease 0s 1 normal forwards;
+    &:hover {
+      -webkit-box-shadow: 4px 8px 14px -2px rgba(0, 0, 0, 0.84);
+      box-shadow: 4px 8px 14px -2px rgba(0, 0, 0, 0.84);
+    }
+    img {
+      display: block;
+      margin-top: 20%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+      animation: myAnim 1s ease 0s 1 normal forwards;
+    }
+    h1 {
+      font-size: 0.8em;
+      color: #595757;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      width: 150px;
+      margin-bottom: 0px;
+      height: 30px;
+      margin-left: 30px;
+      //animation: myAnim 1s ease 0s 1 normal forwards;
+    }
+    p {
+      text-align: center;
+      font-size: 0.72em;
+      color: #d8d6f0;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.5;
+      width: 190px;
+      margin-left: 10px;
+      //animation: myAnim 1s ease 0s 1 normal forwards;
+    }
+    div {
+      //animation: myAnim 1s ease 0s 1 normal forwards;
+      text-align: center;
+      font-size: 0.7em;
+      margin-top: 30px;
+      border-radius: 19px;
+      border-color: #47abf8;
+      width: 116px;
+      height: 20px;
+      padding-top: 9px;
+      margin-left: 40px;
+      color: #595757;
+      font-family: "Open Sans", sans-serif;
+      &:hover {
+        background-color: #47abf8;
+        color: white;
+        -webkit-box-shadow: 4px 8px 14px -2px rgba(0, 0, 0, 0.84);
+        box-shadow: 4px 8px 14px -2px rgba(0, 0, 0, 0.84);
+      }
+    }
+  }
+}
+
+body {
+  background: #e6eff6;
+}
+
+/*------------------------MENU-----------------------*/
+
+@import "sass/_animation.scss";
+
+@import "sass/_responsive.scss";
+
+@import "sass/_menu.scss";
+
+@import "sass/_header.scss";
